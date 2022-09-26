@@ -11,6 +11,11 @@
 		30C77C2428DF1B8A003F2FF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C77C2328DF1B8A003F2FF6 /* ContentView.swift */; };
 		30C77C2628DF1B8C003F2FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C77C2528DF1B8C003F2FF6 /* Assets.xcassets */; };
 		30C77C2928DF1B8C003F2FF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C77C2828DF1B8C003F2FF6 /* Preview Assets.xcassets */; };
+		30C77C3028DF1C71003F2FF6 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C77C2F28DF1C71003F2FF6 /* DataStore.swift */; };
+		30C77C3428DF25A7003F2FF6 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C77C3328DF25A7003F2FF6 /* ContactListView.swift */; };
+		30C77C3628DF25DC003F2FF6 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C77C3528DF25DC003F2FF6 /* NumbersView.swift */; };
+		30C77C3828DF46BB003F2FF6 /*  Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C77C3728DF46BB003F2FF6 /*  Person.swift */; };
+		30C77C3A28DF5D1B003F2FF6 /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C77C3928DF5D1B003F2FF6 /* ContactsDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		30C77C2328DF1B8A003F2FF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30C77C2528DF1B8C003F2FF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30C77C2828DF1B8C003F2FF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30C77C2F28DF1C71003F2FF6 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		30C77C3328DF25A7003F2FF6 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		30C77C3528DF25DC003F2FF6 /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
+		30C77C3728DF46BB003F2FF6 /*  Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Person.swift"; sourceTree = "<group>"; };
+		30C77C3928DF5D1B003F2FF6 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				30C77C2128DF1B8A003F2FF6 /* ContactListSwiftUIApp.swift */,
 				30C77C2328DF1B8A003F2FF6 /* ContentView.swift */,
+				30C77C3528DF25DC003F2FF6 /* NumbersView.swift */,
+				30C77C3328DF25A7003F2FF6 /* ContactListView.swift */,
+				30C77C3928DF5D1B003F2FF6 /* ContactsDetailView.swift */,
+				30C77C3228DF1F21003F2FF6 /* DataStore */,
+				30C77C3128DF1D9A003F2FF6 /* Model */,
 				30C77C2528DF1B8C003F2FF6 /* Assets.xcassets */,
 				30C77C2728DF1B8C003F2FF6 /* Preview Content */,
 			);
@@ -65,6 +80,22 @@
 				30C77C2828DF1B8C003F2FF6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30C77C3128DF1D9A003F2FF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30C77C3728DF46BB003F2FF6 /*  Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30C77C3228DF1F21003F2FF6 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				30C77C2F28DF1C71003F2FF6 /* DataStore.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C77C3028DF1C71003F2FF6 /* DataStore.swift in Sources */,
+				30C77C3828DF46BB003F2FF6 /*  Person.swift in Sources */,
+				30C77C3628DF25DC003F2FF6 /* NumbersView.swift in Sources */,
 				30C77C2428DF1B8A003F2FF6 /* ContentView.swift in Sources */,
+				30C77C3A28DF5D1B003F2FF6 /* ContactsDetailView.swift in Sources */,
 				30C77C2228DF1B8A003F2FF6 /* ContactListSwiftUIApp.swift in Sources */,
+				30C77C3428DF25A7003F2FF6 /* ContactListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
