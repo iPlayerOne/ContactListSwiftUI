@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-private let persons = Person.getPersonList()
-
 struct ContentView: View {
+    
+    private let contacts = Person.getPersonList()
+    
     var body: some View {
         TabView {
-            ContactListView(persons: persons)
+            ContactListView(contacts: contacts)
                 .tabItem {
                     Image(systemName: "person.circle")
                     Text("Contacts")
                 }
-            NumbersView(persons: persons)
+            NumbersView(contacts: contacts)
                 .tabItem {
                     Image(systemName: "phone.fill")
                     Text("Numbers")
                 }
         }
-        .padding()
     }
 }
 

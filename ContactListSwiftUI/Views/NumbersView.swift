@@ -10,12 +10,12 @@ import SwiftUI
 
 struct NumbersView: View {
     
-    let persons: [Person]
+    let contacts: [Person]
     
     var body: some View {
         NavigationStack {
-            List(persons){ person in
-                Section(header: Text(person.fullName)) {
+            List(contacts){ person in
+                Section(header: Text(person.fullName).font(.headline)) {
                     HStack {
                         Image(systemName: "phone")
                         Text(person.number)
@@ -25,7 +25,8 @@ struct NumbersView: View {
                         Text(person.email)
                     }
                 }
-                .navigationTitle("Numbers")
+                .listStyle(.plain)
+                .navigationTitle("Contact List")
             }
         }
     }
@@ -33,6 +34,6 @@ struct NumbersView: View {
 
 struct NumbersView_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersView(persons: Person.getPersonList())
+        NumbersView(contacts: Person.getPersonList())
     }
 }

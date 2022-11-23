@@ -12,14 +12,14 @@ struct ContactsDetailView: View {
     let person: Person
     
     var body: some View {
-        List() {
+        List {
             HStack {
                 Spacer()
                 Image(systemName: "person.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150, height: 150)
-                    Spacer()
+                Spacer()
             }
             HStack {
                 Image(systemName: "phone")
